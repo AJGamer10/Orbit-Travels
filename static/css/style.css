@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+.page1 {
+    background-image: url(../img/background-image.jpg);
+    background-size: 150vmax;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+strong,
+p {
+    font-weight: 300;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px 0 0 0;
+    font-size: .7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+strong,
+p {
+    margin-top: 0;
+    font-weight: 300;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: bold;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro p {
+    margin-top: 40px;
+    text-align: center;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+}
+
+.pontos-turisticos {
+    margin-top: 40px;
+}
+
+.pontos-turisticos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.pontos-turisticos div img {
+    width: 300px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pontos-turisticos div p {
+    margin-top: 5px;
+    color: black;
+    width: 250px;
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    border-radius: 4px;
+    color: inherit;
+    margin-bottom: 15px;
+}
