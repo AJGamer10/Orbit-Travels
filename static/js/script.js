@@ -1,3 +1,4 @@
+// Mostrar a Sidebar
 document.addEventListener('DOMContentLoaded', function () {
     const mostrarSidebarButton = document.getElementById('mostrarSidebar');
     const fecharSidebarButton = document.getElementById('fecharSidebar');
