@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     fecharSidebarButton.addEventListener('click', function () {
-        minhaSidebar.style.left = '-290px'; // Esconde a barra lateral
+        minhaSidebar.style.left = '-100%'; // Esconde a barra lateral
     });
 });
+
+
+// Modal de login
+document.addEventListener('DOMContentLoaded', function () {
+    const mostrarModalLogin = document.getElementById('mostrarModalLogin');
+    const fecharModalLogin = document.getElementById('fecharModalLogin');
+    const modalLogin = document.getElementById('modalLogin');
+
+    mostrarModalLogin.addEventListener('click', function () {
+        modalLogin.style.left = '20%';
+    });
+
+    fecharModalLogin.addEventListener('click', function () {
+        modalLogin.style.left = '100%'; // Esconde a barra lateral
+    });
+})

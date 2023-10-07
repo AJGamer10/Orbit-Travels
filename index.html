@@ -24,17 +24,20 @@
         <header>
             <button class="mostrarSidebar" id="mostrarSidebar"><i class="bi bi-list"></i></button>
             <div class="logo-texto">
-                <img class="logo wrapper" src="static/img/logo.png" alt="logo Orbit Tech">
+                <img class="logo" src="static/img/logo.png" alt="logo Orbit Tech">
                 <h1>Orbit Travels</h1>
             </div>
-            <button class="button-icon-login" id="mostrarModal"><i class="bi bi-person-circle"></i></button>
+            <button class="mostrarModal-login" id="mostrarModalLogin"><i class="bi bi-person-circle"></i></button>
         </header>
         <main>
             <section class="intro">
+                <h2>Compartilhamento de Viagens</h2>
                 <p>Se impressione com as viagens compartilhadas por milhões de pessoas
             </section>
             <section class="pontos-turisticos">
+                <h2>Pontos Turisticos</h2>
                 <div>
+                    <h3>Paris, França</h3>
                     <img src="static/img/paris.jpg" alt="paris">
                     <p>Se maravilhe com a comida e a vista da apaixonante cidade de Paris, França</p>
                     <a class="button" href="paris.html">Saiba mais</a>
@@ -42,7 +45,21 @@
             </section>
         </main>
     </div>
-
+    <div class="modal-login" id="modalLogin">
+        <button class="fecharModal-login" id="fecharModalLogin"><i class="bi bi-chevron-left"></i></button>
+        <h2>Login</h2>
+        <form method="get">
+            <div class="email-group">
+                <input type="email" name="email" class="input-email">
+                <label class="email-label">E-mail</label>
+            </div>
+            <div class="password-group">
+                <input type="password" name="password" class="input-password">
+                <label class="password-label">Senha</label>
+            </div>
+            <button type="submit" class="button-login"><i class="bi bi-send"></i> Enviar</button>
+        </form>
+    </div>
     <aside class="sidebar" id="minhaSidebar">
         <button class="fecharSidebar" id="fecharSidebar"><i class="bi bi-chevron-left"></i></button>
     </aside>
