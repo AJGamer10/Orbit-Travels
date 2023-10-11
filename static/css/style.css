@@ -163,7 +163,7 @@ header div h1 {
 .input-email:focus,
 input:valid {
     outline: none;
-    border: 1.5px solid #1a73e8;
+    border: 1.5px solid #049309;
 }
 
 .input-email:focus~label,
@@ -171,7 +171,7 @@ input:valid~label {
     transform: translateY(-50%) scale(0.8);
     background-color: #212121;
     padding: 0 .2em;
-    color: #2196f3;
+    color: #049309;
 }
 
 .input-password {
@@ -197,7 +197,7 @@ input:valid~label {
 .input-password:focus,
 input:valid {
     outline: none;
-    border: 1.5px solid #1a73e8;
+    border: 1.5px solid #049309;
 }
 
 .input-password:focus~label,
@@ -205,14 +205,14 @@ input:valid~label {
     transform: translateY(-50%) scale(0.8);
     background-color: #212121;
     padding: 0 .2em;
-    color: #2196f3;
+    color: #049309;
 }
 
 .button-login {
     color: white;
     border: none;
     border-radius: 1rem;
-    background-color: #1a73e8;
+    background-color: #049309;
     margin-top: 30px;
     width: 90%;
     height: 3rem;
@@ -243,10 +243,11 @@ input:valid~label {
     margin-top: 5em;
 }
 
-.local {
-    color: blue;
-    justify-content: center;
-    align-self: center;
+.sobre {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0;
 }
 
 .icone {
@@ -258,8 +259,8 @@ input:valid~label {
 }
 
 .pontos-turisticos {
-    margin-top: 40px;
     background-color: white;
+    margin: 0;
 }
 
 .pontos-turisticos h2 {
@@ -267,34 +268,62 @@ input:valid~label {
     padding: 1em;
 }
 
-.pontos-turisticos div {
+.pontos-turisticos h2::after {
+    margin-left: 90px;
+    display: flex;
+    content: "";
+    width: 150px;
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(6,68,0,1) 0%, rgba(0,150,15,1) 50%, rgba(0,255,7,1) 100%);
+}
+
+.proxima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.pontos-turisticos article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
     contain: content;
+    margin-inline: 20px;
+    background-color: #ddd;
 }
 
-.pontos-turisticos div:nth-of-type(odd) {
-    background-color: #ddd;
+.pontos-turisticos article:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pontos-turisticos article:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pontos-turisticos article:nth-of-type(odd) {
+    background-color: #ebebeb;
     .button {
-        border-color: #9e9e9e;
+        border-color: #c4c4c4;
     }
 }
 
-.pontos-turisticos div h3 {
+.pontos-turisticos article h3 {
     font-size: 2em;
     margin-top: .5em;
 }
 
-.pontos-turisticos div img {
+.pontos-turisticos article img {
     display: block;
     margin-top: 1em;
     max-width: 100%;
 }
 
-.pontos-turisticos div p {
+.pontos-turisticos article p {
     margin-top: 10px;
     text-align: center;
     color: black;
@@ -303,7 +332,7 @@ input:valid~label {
 .button {
     text-decoration: none;
     display: block;
-    border: 1px solid #ddd;
+    border: 1px solid #9e9e9e;
     padding: 0.75em;
     border-radius: 4px;
     color: inherit;
