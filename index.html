@@ -19,7 +19,7 @@
     <title>Orbit Travels</title>
 </head>
 
-<body class="page1">
+<body class="page1 bg">
     <header>
         <button class="mostrarSidebar" id="mostrarSidebar"><i class="bi bi-list"></i></button>
         <div class="logo-texto">
@@ -29,21 +29,21 @@
         <button class="mostrarModal-login" id="mostrarModalLogin"><i class="bi bi-person-circle"></i></button>
     </header>
     <main>
-        <section class="intro bg">
+        <section class="intro">
             <h2>Compartilhamento de Viagens</h2>
-            <p>Se impressione com as viagens compartilhadas por milhões de pessoas</
+            <p>Se impressione com as viagens compartilhadas por milhões de pessoas</p>
         </section>
         <section class="sobre">
             <h2>Sobre nós</h2>
             <p>Somos uma empresa que preza pelo compartilhamento de viagens para que mais pessoas possam saber o
-                que as espera para as suas férias</p>
+                que as espera para as suas futuras férias</p>
         </section>
         <section class="pontos-turisticos">
             <h2>Destaques</h2>
             <div class="proxima">
                 <h3>Proximas Viagens</h3>
                 <article class="paris">
-                    <h3>Paris, França</h3>
+                    <h4>Paris, França</h4>
                     <img src="static/img/paris.jpg" alt="paris">
                     <p>Se maravilhe com a comida e a vista da apaixonante cidade de Paris, França</p>
                     <a class="button" href="paris.html">Saiba mais</a>
@@ -58,13 +58,14 @@
         <button class="fecharModal-login" id="fecharModalLogin"><i class="bi bi-chevron-left"></i></button>
         <h2>Login</h2>
         <form method="get">
-            <div class="email-group">
-                <input type="email" name="email" class="input-email">
+            <div class="input-group">
                 <label class="email-label">E-mail</label>
+                <input type="email" name="email" class="input-email">
             </div>
-            <div class="password-group">
-                <input type="password" name="password" class="input-password">
+            <div class="input-group">
                 <label class="password-label">Senha</label>
+                <input type="password" id="senha" class="input-password">
+                <i class="bi bi-eye-slash-fill" id="btn-senha" onclick="mostrarSenha()"></i>
             </div>
             <button type="submit" class="button-login"><i class="bi bi-send"></i> Enviar</button>
         </form>
