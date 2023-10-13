@@ -28,14 +28,3 @@ document.addEventListener('DOMContentLoaded', function () {
         modalLogin.style.left = '100%'; // Esconde a barra lateral
     });
 })
-
-// Mostrar senha no modal de login
-function mostrarSenha() {
-    var inputPass = document.getElementById('senha')
-    var btnShowPass = document.getElementById('btn-senha')
-
-    if(inputPass.type === 'password'){
-        inputPass.setAttribute('type','text')
-        btnShowPass.classList.replace('bi-eye-fill','bi-eye-slash-fill')
-    }
-}
