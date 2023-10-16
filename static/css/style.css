@@ -88,6 +88,7 @@ header {
     padding: 5px;
     font-size: .7em;
     z-index: 2;
+    border-bottom: 1px solid black;
 }
 
 main {
@@ -117,12 +118,22 @@ header div h1 {
     margin-left: 10px;
     color: black;
     font-size: 2.5em;
+    transition: all 0.5s ease;
+}
+
+.bi-list:hover {
+    font-size: 2.6em;
 }
 
 .bi-person-circle {
     margin-right: 10px;
     color: black;
     font-size: 2.5em;
+    transition: all 0.5s ease;
+}
+
+.bi-person-circle:hover {
+    font-size: 2.6em;
 }
 
 .bi-chevron-left {
@@ -133,6 +144,15 @@ header div h1 {
     font-size: 2em;
     color: gray;
     text-shadow: 0px 0px 3px black;
+    transition: all 0.2s ease;
+}
+
+#star1,
+#star2,
+#star3,
+#star4,
+#star5 {
+    cursor: pointer;
 }
 
 .sidebar {
@@ -154,6 +174,11 @@ header div h1 {
 .sidebar-content {
     margin: 10px 0 0 30px;
     font-size: 1.5em;
+    transition: color 0.2s ease;
+}
+
+.sidebar-content:hover {
+    color: rgb(192, 192, 192);
 }
 
 .fecharSidebar {
@@ -479,7 +504,7 @@ textarea {
     padding: 10px;
     border-radius: 10px;
     outline: 0;
-    resize: none;
+    resize: none !important;
 }
 
 .intro-trip {
@@ -526,9 +551,19 @@ textarea {
 
 .sobre-trip {
     margin-top: 20px;
+    border-bottom: 1px solid gray;
 }
 
-.sobre-trip h3 {
+.galeria-container {
+    margin-top: 20px;
+}
+
+.galeria img {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.trip-page h3 {
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -546,6 +581,12 @@ textarea {
     color: inherit;
     margin-bottom: 15px;
     max-width: 8em;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: gray;
+    color: white;
 }
 
 .link {
@@ -607,6 +648,10 @@ footer {
 
 @media screen and (min-width: 1023px) {
 
+    .bg {
+        background-size: cover;
+    }
+
     .filtro-dark {
         display: flex;
         flex-direction: column;
@@ -621,7 +666,7 @@ footer {
     .avaliacoes {
         width: 50vmax;
     }
-    
+
     .sobre {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
