@@ -19,7 +19,7 @@
     <title>Orbit Travels</title>
 </head>
 
-<body class="bg3 page-avaliacoes-body">
+<body class="bg-paris">
     <div class="filtro-dark">
         <header>
             <button class="mostrarSidebar" id="mostrarSidebar"><i class="bi bi-list"></i></button>
@@ -30,32 +30,37 @@
             <button class="mostrarModal-login" id="mostrarModalLogin"><i class="bi bi-person-circle"></i></button>
         </header>
         <main>
-            <section class="avaliacoes">
-                <h2>Avaliar</h2>
-                <form>
-                    <label class="" for="destino">
-                        Diga o destino que deseja avaliar
-                    </label>
-                    <select name="destino" id="appearance-select">
-                        <option value="" selected disabled>Selecione uma opção</option>
-                        <option value="RJ-Brasil">Rio de Janeiro</option>
-                    </select>
-
-                    <label>Feedback</label>
-                    <div class="feedback">
-                        <i class="bi bi-star-fill" id="star1" onclick="Avaliar(1)"></i>
-                        <i class="bi bi-star-fill" id="star2" onclick="Avaliar(2)"></i>
-                        <i class="bi bi-star-fill" id="star3" onclick="Avaliar(3)"></i>
-                        <i class="bi bi-star-fill" id="star4" onclick="Avaliar(4)"></i>
-                        <i class="bi bi-star-fill" id="star5" onclick="Avaliar(5)"></i>
+            <section class="intro-trip">
+                <h2>Paris, França</h2>
+                <p>Descubra a elegância da França, onde a gastronomia refinada, a cultura rica e as paisagens
+                    deslumbrantes se encontram. Sua jornada pela terra do charme começa aqui!</p>
+            </section>
+            <section class="trip-page">
+                <article class="nota">
+                    <h3>Nota</h3>
+                    <div class="nota-estrelas">
+                        <i class="bi bi-star-fill" id="s1"></i>
+                        <i class="bi bi-star-fill" id="s2"></i>
+                        <i class="bi bi-star-fill" id="s3"></i>
+                        <i class="bi bi-star-fill" id="s4"></i>
+                        <i class="bi bi-star-fill" id="s5"></i>
                     </div>
-
-                    <label class="textarea" for="msg">Mensagem</label>
-                    <textarea name="msg" id="" cols="30" rows="6"
-                        placeholder="Deixe uma mensagem para avaliação..."></textarea>
-
-                    <button type="submit" class="button-submit">Enviar</button>
-                </form>
+                </article>
+                <article class="sobre-trip">
+                    <h3>Sobre</h3>
+                    <p>
+                        Paris é conhecida como o principal destino de viagens românticas do mundo. Mas os visitantes se
+                        apaixonam mesmo é pela própria cidade. Construções imponentes de rocha ou ferro forjado,
+                        cafeterias aconchegantes espalhadas pela calçada e as margens sinuosas do Rio Sena são
+                        certamente imagens tiradas de filmes. Mas o charme da cidade vai muito além de sua aparência. O
+                        cenário culinário tem uma lista interminável de pratos franceses que você precisa provar, como
+                        deliciosos coq au vin e croissants amanteigados. Também vale provar a cozinha de fusão moderna e
+                        os pratos internacionais criativos (pode confiar: o falafel da cidade é incrível). Além disso, o
+                        espírito de Paris é um convite para se aventurar pelas ruas secundárias, entrar em museus e
+                        explorar as lojas que parecem labirintos. No fim do dia, vá ao Champ-de-Mars para ter uma vista
+                        livre da Torre Eiffel brilhando à noite.
+                    </p>
+                </article>
             </section>
         </main>
         <div class="modal-login" id="modalLogin">
@@ -80,7 +85,7 @@
             <a class="link sidebar-content" href="avaliacoes.html"><i class="bi bi-pencil-square"></i> Avaliar</a>
             <a class="link sidebar-content" href="contatos.html"><i class="bi bi-envelope"></i> Contatos</a>
         </aside>
-        <footer class="page-avaliacoes">
+        <footer>
             <div class="social-media">
                 <a class="link" href="https://www.instagram.com/abner_juda"><i class="bi bi-instagram"></i></a>
                 <a class="link" href="https://github.com/AJGamer10/Orbit-Travels"><i class="bi bi-github"></i></a>

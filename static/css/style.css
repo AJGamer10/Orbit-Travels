@@ -21,15 +21,14 @@ html {
     background-image: url(../img/background-image.jpg);
     background-size: 80vmax;
     background-attachment: fixed;
-    background-position-x: -60px;
-    background-position-y: -12em;
+    background-position-x: center;
 }
 
 .bg2 {
     background-image: url(../img/background-image2.jpg);
     background-size: 100vmax;
     background-attachment: fixed;
-    background-position-x: -190px;
+    background-position-x: center;
     background-position-y: 50px;
 }
 
@@ -45,6 +44,30 @@ html {
     background-size: 100vmax;
     background-attachment: fixed;
     background-position-x: -160px;
+    background-position-y: 50px;
+}
+
+.bg-paris {
+    background-image: url(../img/paris.jpg);
+    background-size: calc(100vh + 260px);
+    background-attachment: fixed;
+    background-position-x: -450px;
+    background-position-y: 50px;
+}
+
+.bg-veneza {
+    background-image: url(../img/veneza.jpg);
+    background-size: calc(100vh + 260px);
+    background-attachment: fixed;
+    background-position-x: -300px;
+    background-position-y: 50px;
+}
+
+.bg-japao {
+    background-image: url(../img/japao.jpg);
+    background-size: calc(100vh + 260px);
+    background-attachment: fixed;
+    background-position-x: -300px;
     background-position-y: 50px;
 }
 
@@ -109,6 +132,7 @@ header div h1 {
 .bi-star-fill {
     font-size: 2em;
     color: gray;
+    text-shadow: 0px 0px 3px black;
 }
 
 .sidebar {
@@ -151,7 +175,7 @@ header div h1 {
     position: fixed;
     top: 0;
     left: 100%;
-    width: 80%;
+    width: 300px;
     height: 100%;
     background-color: #333;
     color: #fff;
@@ -221,7 +245,8 @@ header div h1 {
     margin-bottom: 30px;
 }
 
-.intro h2, .intro-viagens h2 {
+.intro h2,
+.intro-viagens h2 {
     margin-top: 20px;
     color: white;
     text-align: center;
@@ -234,11 +259,10 @@ header div h1 {
     width: 300px;
     color: white;
     font-size: 20px;
-    margin-top: 6em;
+    margin-top: 2em;
 }
 
 .intro-viagens {
-    background-color: rgba(0, 0, 0, 0.24);
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -458,6 +482,61 @@ textarea {
     resize: none;
 }
 
+.intro-trip {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.intro-trip h2 {
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+.intro-trip p {
+    font-size: 1.2em;
+}
+
+.trip-page {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nota {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-block: 20px;
+}
+
+.nota-estrelas {
+
+    #s1,
+    #s2,
+    #s3,
+    #s4 {
+        color: yellow;
+    }
+}
+
+.sobre-trip {
+    margin-top: 20px;
+}
+
+.sobre-trip h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sobre-trip p {
+    text-align: justify;
+}
+
 .button {
     background: none;
     text-decoration: none;
@@ -482,7 +561,6 @@ footer {
 .page-viagens {
     padding-block: 20px;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.37);
 }
 
 .page-viagens p {
@@ -493,7 +571,6 @@ footer {
     padding-block: 23px;
     margin-top: 20px;
     margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.384);
 }
 
 .page-avaliacoes-body {
@@ -503,6 +580,10 @@ footer {
 .page-contatos {
     padding-block: 20px;
     margin: 0;
+}
+
+footer {
+    margin-bottom: 0;
 }
 
 .social-media {
@@ -520,4 +601,42 @@ footer {
 
 .copy {
     text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1023px) {
+
+    .filtro-dark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sugest {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .avaliacoes {
+        width: 50vmax;
+    }
+    
+    .sobre {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .pontos-turisticos {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .pontos-turisticos h2::after {
+        margin-left: 300px;
+    }
+
+    .conteudo-destaques {
+        display: flex;
+    }
 }

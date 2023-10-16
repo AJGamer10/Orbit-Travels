@@ -19,7 +19,7 @@
     <title>Orbit Travels</title>
 </head>
 
-<body class="bg3 page-avaliacoes-body">
+<body class="bg-veneza">
     <div class="filtro-dark">
         <header>
             <button class="mostrarSidebar" id="mostrarSidebar"><i class="bi bi-list"></i></button>
@@ -30,32 +30,36 @@
             <button class="mostrarModal-login" id="mostrarModalLogin"><i class="bi bi-person-circle"></i></button>
         </header>
         <main>
-            <section class="avaliacoes">
-                <h2>Avaliar</h2>
-                <form>
-                    <label class="" for="destino">
-                        Diga o destino que deseja avaliar
-                    </label>
-                    <select name="destino" id="appearance-select">
-                        <option value="" selected disabled>Selecione uma opção</option>
-                        <option value="RJ-Brasil">Rio de Janeiro</option>
-                    </select>
-
-                    <label>Feedback</label>
-                    <div class="feedback">
-                        <i class="bi bi-star-fill" id="star1" onclick="Avaliar(1)"></i>
-                        <i class="bi bi-star-fill" id="star2" onclick="Avaliar(2)"></i>
-                        <i class="bi bi-star-fill" id="star3" onclick="Avaliar(3)"></i>
-                        <i class="bi bi-star-fill" id="star4" onclick="Avaliar(4)"></i>
-                        <i class="bi bi-star-fill" id="star5" onclick="Avaliar(5)"></i>
+            <section class="intro-trip">
+                <h2>Veneza, Itália</h2>
+                <p>Explore a mágica Veneza: canais encantadores, cultura rica e ruas pitorescas. Sua viagem dos
+                    sonhos começa agora!</p>
+            </section>
+            <section class="trip-page">
+                <article class="nota">
+                    <h3>Nota</h3>
+                    <div class="nota-estrelas">
+                        <i class="bi bi-star-fill" id="s1"></i>
+                        <i class="bi bi-star-fill" id="s2"></i>
+                        <i class="bi bi-star-fill" id="s3"></i>
+                        <i class="bi bi-star-fill" id="s4"></i>
+                        <i class="bi bi-star-fill" id="s5"></i>
                     </div>
-
-                    <label class="textarea" for="msg">Mensagem</label>
-                    <textarea name="msg" id="" cols="30" rows="6"
-                        placeholder="Deixe uma mensagem para avaliação..."></textarea>
-
-                    <button type="submit" class="button-submit">Enviar</button>
-                </form>
+                </article>
+                <article class="sobre-trip">
+                    <h3>Sobre</h3>
+                    <p>
+                        As construções e pontes centenárias, os silenciosos canais e becos de paralelepípedos, o
+                        labirinto de ilhas encantador: tudo isso faz de Veneza um cenário dos sonhos. Apesar disso, ela
+                        existe de verdade e, sem dúvidas, a capital de Vêneto é maravilhosa. O Grande Canal e a Praça de
+                        São Marcos são os principais pontos de atividades turísticas. As ruas sinuosas dos arredores
+                        estão cheias de cafeterias e gelaterias estilosas, lojas de souvenirs e butiques únicas, além de
+                        palácios renascentistas maravilhosos e igrejas góticas. Após visitar os principais pontos
+                        turísticos (não se esqueça do Campanário e da Gallerie dell’Accademia), conheça os bairros menos
+                        famosos, como Cannaregio, Dorsoduro e Castello, onde os moradores lotam as trattorias para comer
+                        à tarde.
+                    </p>
+                </article>
             </section>
         </main>
         <div class="modal-login" id="modalLogin">
@@ -80,7 +84,7 @@
             <a class="link sidebar-content" href="avaliacoes.html"><i class="bi bi-pencil-square"></i> Avaliar</a>
             <a class="link sidebar-content" href="contatos.html"><i class="bi bi-envelope"></i> Contatos</a>
         </aside>
-        <footer class="page-avaliacoes">
+        <footer>
             <div class="social-media">
                 <a class="link" href="https://www.instagram.com/abner_juda"><i class="bi bi-instagram"></i></a>
                 <a class="link" href="https://github.com/AJGamer10/Orbit-Travels"><i class="bi bi-github"></i></a>

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalLogin = document.getElementById('modalLogin');
 
     mostrarModalLogin.addEventListener('click', function () {
-        modalLogin.style.left = '20%';
+        modalLogin.style.left = 'calc(100% - 300px)';
     });
 
     fecharModalLogin.addEventListener('click', function () {
@@ -39,12 +39,14 @@ Avaliar(estrela); {
 
     var list = [star1, star2, star3, star4, star5]
 
+    // 1 Estrela
     if (estrela == 5) {
         for (var i = 0; i < 6; i++) {
             list[i].style.color = 'yellow'
         }
     }
 
+    // 2 Estrela
     if (estrela == 4) {
         for (var i = 0; i < 5; i++) {
             list[i].style.color = 'yellow'
@@ -52,6 +54,7 @@ Avaliar(estrela); {
         star5.style.color = 'gray'
     }
 
+    // 3 Estrela
     if (estrela == 3) {
         for (var i = 0; i < 4; i++) {
             list[i].style.color = 'yellow'
@@ -60,6 +63,7 @@ Avaliar(estrela); {
         star5.style.color = 'gray'
     }
 
+    // 2 Estrela
     if (estrela == 2) {
         for (var i = 0; i < 3; i++) {
             list[i].style.color = 'yellow'
@@ -69,6 +73,7 @@ Avaliar(estrela); {
         star5.style.color = 'gray'
     }
 
+    // 1 Estrela
     if (estrela == 1) {
         for (var i = 0; i < 2; i++) {
             list[i].style.color = 'yellow'

@@ -20,85 +20,90 @@
 </head>
 
 <body class="page-index bg">
-    <header>
-        <button class="mostrarSidebar" id="mostrarSidebar"><i class="bi bi-list"></i></button>
-        <div class="logo-texto">
-            <img class="logo" src="static/img/logo.png" alt="logo Orbit Tech">
-            <h1>Orbit Travels</h1>
+    <div class="filtro-dark">
+        <header>
+            <button class="mostrarSidebar" id="mostrarSidebar"><i class="bi bi-list"></i></button>
+            <div class="logo-texto">
+                <img class="logo" src="static/img/logo.png" alt="logo Orbit Tech">
+                <h1>Orbit Travels</h1>
+            </div>
+            <button class="mostrarModal-login" id="mostrarModalLogin"><i class="bi bi-person-circle"></i></button>
+        </header>
+        <main>
+            <section class="intro">
+                <h2>Compartilhamento de Viagens</h2>
+                <p>Se impressione com as viagens compartilhadas por milhões de pessoas</p>
+            </section>
+            <section class="sobre">
+                <h2>Sobre nós</h2>
+                <p>Somos uma empresa que preza pelo compartilhamento de viagens para que mais pessoas possam saber o
+                    que as espera para as suas futuras férias</p>
+            </section>
+            <section class="pontos-turisticos">
+                <h2>Destaques</h2>
+                <div class="conteudo-destaques">
+                    <div id="viagensRecentes" class="visitados viagens">
+                        <h3>Viagens Recentes</h3>
+                        <article class="rio">
+                            <h4>Rio de Janeiro, Brasil</h4>
+                            <img src="static/img/rio.jpg" alt="rio de janeiro, brasil">
+                            <p>Dê uma avaliação do que você achou da sua viagem clicando no botão de avaliações no menu
+                            </p>
+                        </article>
+                    </div>
+                    <div id="proximasViagens" class="proximas">
+                        <h3>Proximas Viagens</h3>
+                        <article class="paris">
+                            <h4>Paris, França</h4>
+                            <img src="static/img/paris.jpg" alt="paris, frança">
+                            <p>Descubra a elegância da França, onde a gastronomia refinada, a cultura rica e as
+                                paisagens
+                                deslumbrantes se encontram. Sua jornada pela terra do charme começa aqui!</p>
+                            <a class="button" href="paris.html">Saiba mais</a>
+                        </article>
+                        <article>
+                            <h4>Veneza, Itália</h4>
+                            <img src="static/img/veneza.jpg" alt="veneza, itália">
+                            <p>Explore a mágica Veneza: canais encantadores, cultura rica e ruas pitorescas. Sua viagem
+                                dos
+                                sonhos começa agora!</p>
+                            <a class="button" href="veneza.html">Saiba mais</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="modal-login" id="modalLogin">
+            <button class="fecharModal-login" id="fecharModalLogin"><i class="bi bi-chevron-left"></i></button>
+            <h2>Login</h2>
+            <form method="get">
+                <div class="input-group">
+                    <label class="email-label">E-mail</label>
+                    <input type="email" name="email" class="input-email">
+                </div>
+                <div class="input-group">
+                    <label class="password-label">Senha</label>
+                    <input type="password" id="senha" class="input-password">
+                </div>
+                <button type="submit" class="button-login"><i class="bi bi-send"></i> Enviar</button>
+            </form>
         </div>
-        <button class="mostrarModal-login" id="mostrarModalLogin"><i class="bi bi-person-circle"></i></button>
-    </header>
-    <main>
-        <section class="intro">
-            <h2>Compartilhamento de Viagens</h2>
-            <p>Se impressione com as viagens compartilhadas por milhões de pessoas</p>
-        </section>
-        <section class="sobre">
-            <h2>Sobre nós</h2>
-            <p>Somos uma empresa que preza pelo compartilhamento de viagens para que mais pessoas possam saber o
-                que as espera para as suas futuras férias</p>
-        </section>
-        <section class="pontos-turisticos">
-            <h2>Destaques</h2>
-            <div class="conteudo-destaques">
-                <div id="viagensRecentes" class="visitados viagens">
-                    <h3>Viagens Recentes</h3>
-                    <article class="rio">
-                        <h4>Rio de Janeiro, Brasil</h4>
-                        <img src="static/img/rio.jpg" alt="rio de janeiro, brasil">
-                        <p>Dê uma avaliação do que você achou da sua viagem clicando no botão de avaliações no menu</p>
-                    </article>
-                </div>
-                <div id="proximasViagens" class="proximas">
-                    <h3>Proximas Viagens</h3>
-                    <article class="paris">
-                        <h4>Paris, França</h4>
-                        <img src="static/img/paris.jpg" alt="paris, frança">
-                        <p>Descubra a elegância da França, onde a gastronomia refinada, a cultura rica e as paisagens
-                            deslumbrantes se encontram. Sua jornada pela terra do charme começa aqui!</p>
-                        <a class="button" href="#">Saiba mais</a>
-                    </article>
-                    <article>
-                        <h4>Veneza, Itália</h4>
-                        <img src="static/img/veneza.jpg" alt="veneza, itália">
-                        <p>Explore a mágica Veneza: canais encantadores, cultura rica e ruas pitorescas. Sua viagem dos
-                            sonhos começa agora!</p>
-                        <a class="button" href="#">Saiba mais</a>
-                    </article>
-                </div>
+        <aside class="sidebar" id="minhaSidebar">
+            <button class="fecharSidebar" id="fecharSidebar"><i class="bi bi-chevron-left"></i></button>
+            <a class="link sidebar-content" href="index.html"><i class="bi bi-house-fill"></i> Início</a>
+            <a class="link sidebar-content" href="viagens.html"><i class="bi bi-airplane-fill"></i> Viagens</a>
+            <a class="link sidebar-content" href="avaliacoes.html"><i class="bi bi-pencil-square"></i> Avaliar</a>
+            <a class="link sidebar-content" href="contatos.html"><i class="bi bi-envelope"></i> Contatos</a>
+        </aside>
+        <footer>
+            <div class="social-media">
+                <a class="link" href="https://www.instagram.com/abner_juda"><i class="bi bi-instagram"></i></a>
+                <a class="link" href="https://github.com/AJGamer10/Orbit-Travels"><i class="bi bi-github"></i></a>
+                <a class="link" href="https://twitter.com/10Ajgamer"><i class="bi bi-twitter"></i></a>
             </div>
-        </section>
-    </main>
-    <div class="modal-login" id="modalLogin">
-        <button class="fecharModal-login" id="fecharModalLogin"><i class="bi bi-chevron-left"></i></button>
-        <h2>Login</h2>
-        <form method="get">
-            <div class="input-group">
-                <label class="email-label">E-mail</label>
-                <input type="email" name="email" class="input-email">
-            </div>
-            <div class="input-group">
-                <label class="password-label">Senha</label>
-                <input type="password" id="senha" class="input-password">
-            </div>
-            <button type="submit" class="button-login"><i class="bi bi-send"></i> Enviar</button>
-        </form>
+            <p class="copy">&copy Orbit Travels</p>
+        </footer>
     </div>
-    <aside class="sidebar" id="minhaSidebar">
-        <button class="fecharSidebar" id="fecharSidebar"><i class="bi bi-chevron-left"></i></button>
-        <a class="link sidebar-content" href="index.html"><i class="bi bi-house-fill"></i> Início</a>
-        <a class="link sidebar-content" href="viagens.html"><i class="bi bi-airplane-fill"></i> Viagens</a>
-        <a class="link sidebar-content" href="avaliacoes.html"><i class="bi bi-pencil-square"></i> Avaliar</a>
-        <a class="link sidebar-content" href="contatos.html"><i class="bi bi-envelope"></i> Contatos</a>
-    </aside>
-    <footer>
-        <div class="social-media">
-            <a class="link" href="https://www.instagram.com/abner_juda"><i class="bi bi-instagram"></i></a>
-            <a class="link" href="https://github.com/AJGamer10/Orbit-Travels"><i class="bi bi-github"></i></a>
-            <a class="link" href="https://twitter.com/10Ajgamer"><i class="bi bi-twitter"></i></a>
-        </div>
-        <p class="copy">&copy Orbit Travels</p>
-    </footer>
 </body>
 
 </html>
