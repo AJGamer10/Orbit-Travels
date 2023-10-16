@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+* {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
 .page-index {
-    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     line-height: 1.65;
     margin: 0;
@@ -30,8 +33,30 @@ html {
     background-position-y: 50px;
 }
 
+.bg3 {
+    background-image: url(../img/background-image3.jpg);
+    background-size: 100vmax;
+    background-attachment: fixed;
+    background-position-x: -140px;
+}
+
+.bg4 {
+    background-image: url(../img/background-image4.jpg);
+    background-size: 100vmax;
+    background-attachment: fixed;
+    background-position-x: -160px;
+    background-position-y: 50px;
+}
+
+.filtro-dark {
+    background-color: rgba(0, 0, 0, 0.322);
+}
 
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     background-color: #fff;
     color: black;
@@ -39,14 +64,16 @@ header {
     justify-content: space-between;
     padding: 5px;
     font-size: .7em;
+    z-index: 2;
 }
 
 main {
     max-width: 800px;
-    margin: 0;
+    margin-top: 57px;
 }
 
 header div h1 {
+    margin-top: 7px;
     margin-left: 10px;
     font-size: 2.3em;
 }
@@ -54,6 +81,7 @@ header div h1 {
 .logo {
     width: 35px;
     height: 35px;
+    margin-top: 0;
 }
 
 .logo-texto {
@@ -78,10 +106,15 @@ header div h1 {
     font-size: 1.5em;
 }
 
+.bi-star-fill {
+    font-size: 2em;
+    color: gray;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items: start;
     position: fixed;
     top: 0;
     left: -100%;
@@ -91,6 +124,7 @@ header div h1 {
     color: #fff;
     padding-left: 20px;
     transition: left 0.5s ease;
+    z-index: 3;
 }
 
 .sidebar-content {
@@ -123,9 +157,11 @@ header div h1 {
     color: #fff;
     padding-left: 20px;
     transition: left 0.5s ease;
+    z-index: 4;
 }
 
 .fecharModal-login {
+    margin-left: 230px;
     background: none;
     color: white;
     border: none;
@@ -185,9 +221,9 @@ header div h1 {
     margin-bottom: 30px;
 }
 
-.intro h2 {
+.intro h2, .intro-viagens h2 {
+    margin-top: 20px;
     color: white;
-    font-family: 'Anton', sans-serif;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
@@ -202,17 +238,42 @@ header div h1 {
 }
 
 .intro-viagens {
-    background-color: white;
-    margin: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.24);
+    margin-top: 0;
     display: flex;
-    justify-content: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
 }
 
 .intro-viagens h2 {
-    margin: 20px 0;
-    font-size: 2em;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+.intro-viagens p {
+    font-size: 1.2em;
+}
+
+.intro-contatos {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.intro-contatos h2 {
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+.intro-contatos p {
+    font-size: 1.2em;
 }
 
 .sobre {
@@ -236,6 +297,18 @@ header div h1 {
     left: 40px;
 }
 
+.contato {
+    margin: 0 20px 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.first {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 .pontos-turisticos {
     background-color: white;
     margin: 0;
@@ -249,6 +322,7 @@ header div h1 {
 }
 
 .pontos-turisticos h2::after {
+    margin-top: 5px;
     margin-left: 90px;
     display: flex;
     content: "";
@@ -297,7 +371,7 @@ header div h1 {
     border-bottom-right-radius: 10px;
 }
 
-.pontos-turisticos article img {
+img {
     display: block;
     margin-top: 1em;
     max-width: 100%;
@@ -311,6 +385,79 @@ header div h1 {
     color: black;
 }
 
+.avaliacoes {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    margin: 100px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avaliacoes form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avaliacoes label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.avaliacoes select {
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: 0;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+#appearance-select {
+    min-width: 250px;
+    /* Tamanho do select, maior que o tamanho da div "div-select" */
+    min-height: 30px;
+    /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    border: 1px solid gray;
+}
+
+.bg4 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg4 input {
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: 0;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.bg4 label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.button-submit {
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #616161;
+    padding: 0.75em;
+    border-radius: 4px;
+    color: inherit;
+    margin-bottom: 15px;
+    min-width: 100%;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    outline: 0;
+    resize: none;
+}
+
 .button {
     background: none;
     text-decoration: none;
@@ -319,6 +466,7 @@ header div h1 {
     border-radius: 4px;
     color: inherit;
     margin-bottom: 15px;
+    max-width: 8em;
 }
 
 .link {
@@ -331,11 +479,38 @@ footer {
     margin: 10px 0;
 }
 
+.page-viagens {
+    padding-block: 20px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.page-viagens p {
+    margin-bottom: 0;
+}
+
+.page-avaliacoes {
+    padding-block: 23px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.page-avaliacoes-body {
+    margin: 0;
+}
+
+.page-contatos {
+    padding-block: 20px;
+    margin: 0;
+}
+
 .social-media {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
     font-size: 1.5em;
+
     a {
         border: 1px solid white;
         padding: 10px;
