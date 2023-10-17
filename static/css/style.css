@@ -652,6 +652,23 @@ footer {
         background-size: cover;
     }
 
+    .bg-paris {
+        background-size: cover;
+        background-position-x: 0;
+        background-position-y: -80px;
+    }
+
+    .bg-veneza {
+        background-size: cover;
+        background-position-x: 0;
+    }
+
+    .bg-japao {
+        background-size: cover;
+        background-position-x: 0;
+        background-position-y: -80px;
+    }
+
     .filtro-dark {
         display: flex;
         flex-direction: column;
@@ -678,7 +695,7 @@ footer {
     }
 
     .pontos-turisticos h2::after {
-        margin-left: 300px;
+        margin-left: 292px;
     }
 
     .conteudo-destaques {
